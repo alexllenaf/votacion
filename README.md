@@ -1,6 +1,6 @@
 # Votación en directo: página de voto
 
-Página para el móvil de la votación en directo de la presentación AI Organisational Impact (tecla **V** en la escena de retos). El QR de la presentación trae aquí con la sesión en la dirección (`#s=<id>`). Cada voto se publica en ntfy.sh, en el tema `aiimpact-<id>`, y la presentación lo recibe al momento.
+Página para el móvil de la votación en directo de la presentación AI Organisational Impact (diapositiva «Votación en directo», justo antes de la de retos: la votación se abre sola al llegar a ella). El QR de la presentación trae aquí con la sesión en la dirección (`#s=<id>`). Cada voto se publica en ntfy.sh, en el tema `aiimpact-<id>`, y la presentación lo recibe al momento.
 
 Es un solo fichero, `index.html`, sin dependencias ni servidor propio.
 
@@ -25,7 +25,7 @@ Para cambiarla después basta con subir el `index.html` nuevo; Pages lo publica 
 
 ## Probarla
 
-- En el deck: con `?votacion=demo` se ensaya sin red (V simula 14 votos en 8 s); sin parámetros, la votación es real.
+- En el deck: con `?votacion=demo` se ensaya sin red (al llegar a la diapositiva de la votación llegan 14 votos simulados en 8 s); sin parámetros, la votación es real.
 - En local, sin publicar: abrir `index.html#s=<id>` en el navegador, con el id que lleva el QR del deck. Los votos llegan igual, porque los envía el navegador a ntfy.sh.
 - Las pruebas del deck (`node scripts/test-votacion.mjs`) votan con esta página en local.
 
